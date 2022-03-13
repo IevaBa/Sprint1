@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="title" content="All about CSS" />
+    <meta property="description" content="You will learn about" />
+    <!-- Open graph meta tags -->
+    <meta property="og:title" content="All you need to know about CSS" />
+    <meta
+      property="og:description"
+      content="You will learn about ruleset of CSS. 3 ways to add it to HTML"
+    />
+    <meta property="og:image" content="./img/css.png" />
+    <meta
+      property="og:url"
+      content="https://ievaba.github.io/BitHTML/Sprint1_MyBlog/"
+    />
+    <meta property="og:type" content="blog" />
+
+    <!-- Twitter mata tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="All you need to know about CSS" />
+    <meta
+      name="twitter:description"
+      content="You will learn about ruleset of CSS. 3 ways to add it to HTML "
+    />
+    <meta name="twitter:image" content="img/css.png" />
+    <meta
+      name="twitter:url"
+      content="https://ievaba.github.io/BitHTML/Sprint1_MyBlog/"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-DCEZQLTW1B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DCEZQLTW1B");
+    </script>
+    <title>About CSS</title>
+    <style>
+      header {
+        background: #3fabe2;
+        padding: 8px;
+        border-bottom: 10px solid #307ca2;
+      }
+      main {
+        padding: 10px;
+      }
+      p {
+        font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia",
+          serif;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      a {
+        font-size: 20px;
+      }
+      img {
+        width: 80%;
+        max-width: 650px;
+        height: auto;
+      }
+      pre {
+        background: #dadbdb;
+        width: 300px;
+        border-left: 8px solid #1a5282;
+      }
+      @media only screen and (max-width: 800px) {
+        li,
+        p,
+        a {
+          font-size: 18px;
+        }
+        h1 {
+          font-size: 18px;
+          margin: 10px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        li,
+        p,
+        a {
+          font-size: 15px;
+        }
+        h1 {
+          font-size: 18px;
+          margin: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"> Go back</a>
+    </nav>
+    <header>
+      <h1>What is CSS?</h1>
+    </header>
+    <main>
+      <p>
+        Like HTML, CSS is not a programming language. It's not a markup language
+        either. <strong> CSS is a style sheet language. </strong> CSS is what
+        you use to selectively style HTML elements.
+      </p>
+      <p>CSS can be added to HTML documents in 3 ways:</p>
+      <ol>
+        <li>
+          <p>
+            <b> Inline</b> - by using the style attribute inside HTML elements.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b> Internal</b> - code by using a style element in the &lt;head&gt;
+            section.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>External </b>- by using a &lt;link/&gt; element to link to an
+            external CSS file.
+          </p>
+        </li>
+      </ol>
+      <hr />
+      <p>
+        The whole CSS structure is called a <b> ruleset </b> and looks like
+        this:
+      </p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE6S7VfRkU_AfhkRDKdP-8KOuHkyv78iaxMQ&amp;usqp=CAU"
+        alt="CSS syntax and selectors"
+      />
+      <!-- mete klaida dėl & ženklo nuorodoje, jį galim pakeisti su &amp; kad HTML validator priimtų-->
+      <p>Note the names of the individual parts:</p>
+      <ul>
+        <li>
+          <p>
+            <b> Selector.</b> This is the HTML element name at the start of the
+            ruleset. It defines the element(s) to be styled.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Declaration.</b> This is a single rule that specifies which of
+            the element's properties you want to style.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Properties.</b> These are ways in which you can style HTML
+            element. You can choose which properties you want to affect in the
+            rule.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Property value.</b> To the right of the property after the colon
+            (:) there is the property value. This chooses one out of many
+            possible appearances for a given property (for example, there are
+            many color values).
+          </p>
+        </li>
+      </ul>
+      <p>Here is the <b> code example</b> for better understanding:</p>
+      <pre>
+        body {
+        background: gray;
+        }
+        header {
+        color: white;
+        background: blue;
+        }
+        p {
+        font-size: 18px;
+        font-family: monospace;
+        line-height: 1.5;
+        }
+        </pre
+      >
+      <p>
+        In our example selectors are
+        <u> body, header and paragraph (p) </u>. We will change a style for
+        these selectors. <br />
+        * Property for body is background and the value is color gray. It means
+        all the background of your page will be gray. <br />
+        * Properties for header is color and background, with values white and
+        blue. It means that the header background color will become blue and the
+        text in the header - white. <br />
+        * Properties for paragraph is font-size, font-family and line-height. It
+        means that all the text in your paragraphs will be 18px size, will have
+        monoscpace font and the height between the lines will be 1.5.
+      </p>
+    </main>
+  </body>
+</html>

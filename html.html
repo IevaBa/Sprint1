@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="title" content="All about HTML" />
+    <meta
+      property="description"
+      content="You will learn about HTML elements, tags and atributes "
+    />
+    <!-- Open graph meta tags -->
+    <meta property="og:title" content="All you need to know about HTML" />
+    <meta
+      property="og:description"
+      content="You will learn about HTML structure, elements, tags and atributes"
+    />
+    <meta property="og:image" content="img/html.png" />
+    <meta
+      property="og:url"
+      content="https://ievaba.github.io/BitHTML/Sprint1_MyBlog/"
+    />
+    <meta property="og:type" content="blog" />
+
+    <!-- Twitter mata tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="All you need to know about HTML" />
+    <meta
+      name="twitter:description"
+      content="You will learn about HTML structure, elements, tags and atributes"
+    />
+    <meta name="twitter:image" content="img/html.png" />
+    <meta
+      name="twitter:url"
+      content="https://ievaba.github.io/BitHTML/Sprint1_MyBlog/"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-DCEZQLTW1B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DCEZQLTW1B");
+    </script>
+    <title>All about HTML</title>
+    <style>
+      header {
+        background: #f26525;
+        padding: 8px;
+        border-bottom: 10px solid #c65622;
+      }
+      main {
+        padding: 10px;
+      }
+      img {
+        width: 80%;
+        max-width: 600px;
+        height: auto;
+      }
+      p,
+      li {
+        font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia",
+          serif;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      a {
+        font-size: 20px;
+      }
+      table td,
+      table th {
+        border: 1px solid #297272;
+        padding: 6px;
+      }
+      th {
+        background: #53b8b8;
+      }
+      table {
+        border-collapse: collapse;
+        margin-bottom: 10px;
+      }
+      @media only screen and (max-width: 800px) {
+        li,
+        p,
+        a {
+          font-size: 18px;
+        }
+        h1 {
+          font-size: 18px;
+          margin: 10px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        li,
+        p,
+        a {
+          font-size: 15px;
+        }
+        h1 {
+          font-size: 18px;
+          margin: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"> Go back</a>
+    </nav>
+    <header>
+      <h1>What is HTML?</h1>
+    </header>
+    <main>
+      <p>
+        <strong
+          >HTML is a markup language that defines the basic structure of web
+          pages.</strong
+        >
+        It simply gives browsers the content it needs to display and doesn’t
+        care how the browser goes about displaying the content, as long as it’s
+        displayed. In other words, HTML has a structural purpose, not a
+        functional one.
+      </p>
+      <p>
+        HTML is made up of a <b> unique syntax and alphabet</b> as shown below:
+      </p>
+      <img src="img/html_syntax.png" alt="HTML syntax" />
+      <p>Let's take a closer look at each component of an element:</p>
+      <ul>
+        <li>
+          <strong>HTML Tags.</strong> Most elements have an opening and closing
+          tag. Opening tags precede the text and contain the element name
+          enclosed by the brackets “&lt;” and “&gt;”. Closing tags are identical
+          to opening tags, save for a backward slash that precedes the element
+          name.
+        </li>
+        <table>
+          <thead>
+            <p style="line-height: 0">Some HTML tags examples:</p>
+            <tr>
+              <th>Open tag</th>
+              <th>Close tag</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt; h1 &gt;</td>
+              <td>&lt;/ h1 &gt;</td>
+              <td>The lagest heading</td>
+            </tr>
+            <tr>
+              <td>&lt; h6 &gt;</td>
+              <td>&lt;/ h6 &gt;</td>
+              <td>The smallest heading</td>
+            </tr>
+            <tr>
+              <td>&lt; p &gt;</td>
+              <td>&lt;/ p &gt;</td>
+              <td>This tag allows you to create paragraphs</td>
+            </tr>
+            <tr>
+              <td>&lt; b &gt;</td>
+              <td>&lt;/ b &gt;</td>
+              <td>Makes text bold</td>
+            </tr>
+            <tr>
+              <td>&lt; i &gt;</td>
+              <td>&lt;/ i &gt;</td>
+              <td>Makes text italic</td>
+            </tr>
+          </tbody>
+        </table>
+        <li>
+          <strong>HTML Atributes.</strong> While all HTML elements need tags,
+          only some need attributes. An attribute provides additional
+          information about the HTML element, and this information can be
+          essential or non-essential. Most often used atributes is
+          <i> "href"</i> - specifies the URL of the page the link goes to;
+          <i> "src" </i> - specifies the path to the image to be displayed;
+          <i>"alt" </i> - specifies the path to the image to be displayed;
+          <i> "style"</i> -is used to add styles to an element, such as color,
+          font, size, and more.
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

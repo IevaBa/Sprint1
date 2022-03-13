@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="title" content="About JavaScript" />
+    <meta
+      property="description"
+      content="You will be able to learn about JavaScript in several different levels"
+    />
+    <!-- Open graph meta tags -->
+    <meta property="og:title" content="All you need to know about JavaScript" />
+    <meta
+      property="og:description"
+      content="Enroll for full access. Choose between Basic, Plus and Premium"
+    />
+    <meta property="og:image" content="img/js.png" />
+    <meta
+      property="og:url"
+      content="https://ievaba.github.io/BitHTML/Sprint1_MyBlog/"
+    />
+    <meta property="og:type" content="blog" />
+
+    <!-- Twitter mata tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="All you need to know about Js" />
+    <meta
+      name="twitter:description"
+      content="Enroll for full access. Choose between Basic, Plus and Premium"
+    />
+    <meta name="twitter:image" content="img/js.png" />
+    <meta
+      name="twitter:url"
+      content="https://ievaba.github.io/BitHTML/Sprint1_MyBlog/"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-DCEZQLTW1B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DCEZQLTW1B");
+    </script>
+    <title>Learn Javascript</title>
+    <style>
+      header {
+        background: #f69823;
+        padding: 8px;
+        border-bottom: 10px solid #cb7d1e;
+      }
+      main {
+        padding: 10px;
+      }
+      p {
+        font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia",
+          serif;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      a {
+        font-size: 20px;
+      }
+      form {
+        border: 1px solid darkgray;
+        padding: 8px;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      input,
+      select {
+        font-size: 18px;
+      }
+      @media only screen and (max-width: 800px) {
+        h1,
+        h2,
+        li,
+        p,
+        a {
+          font-size: 18px;
+        }
+        h1 {
+          margin: 10px;
+        }
+        form,
+        input,
+        select {
+          font-size: 16px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        h2,
+        li,
+        p,
+        a {
+          font-size: 15px;
+        }
+        h1 {
+          font-size: 18px;
+          margin: 5px;
+        }
+        form,
+        input,
+        select {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"> Go back</a>
+    </nav>
+    <header>
+      <h1>What is JavaScript?</h1>
+    </header>
+    <main>
+      <p>
+        <strong> JavaScript is a dynamic programming language </strong>that's
+        used for web development, in web applications, for game development, and
+        lots more. It allows you to implement dynamic features on web pages that
+        cannot be done with only HTML and CSS.
+      </p>
+      <p>
+        Learn all the basic features of JavaScript, including making your
+        website more interactive, changing website content, validating forms,
+        and so much more.
+      </p>
+      <h2>Enroll for my Workshop:</h2>
+      <section>
+        <form>
+          <label>Enter you name</label> <br />
+          <input type="text" /> <br />
+          <label>Enter your surname</label> <br />
+          <input type="text" />
+          <br />
+          <label for="birth_date">Your date of birth</label> <br />
+          <input type="date" name="birth_date" />
+          <br />
+          <label for="level"> Choose Workshop:</label> <br />
+          <label for="basic">JavaScript Basic</label>
+          <input type="radio" id="basic" name="level" value="JS Basic" />
+          <br />
+          <label for="plus">JavaScript Plus</label>
+          <input type="radio" id="plus" name="level" value="JS Plus" /> <br />
+          <label for="premium">JavaScript Premium</label>
+          <input type="radio" id="premium" name="level" value="JS Premium" />
+          <!-- būtinai turi būti tas pats name !!!! -->
+          <br />
+          <label for="course">When do you want to start?</label> <br />
+          <select>
+            <option value="march15">March 15th</option>
+            <option value="april15">April 15th</option>
+            <option value="may15">May 15th</option>
+          </select>
+          <br />
+          <label>Email</label> <br />
+          <input type="email" name="email" id="" /> <br />
+          <label>Password</label> <br />
+          <input type="password" /> <br />
+          <label>I want to receive newsletters and promo</label>
+          <input type="checkbox" name="newsletter" /> <br />
+          <input type="submit" value="Enroll now" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

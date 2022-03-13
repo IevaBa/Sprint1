@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="title" content="Ieva Ba programming blog" />
+    <meta
+      name="description"
+      content="Some interesting insites about Html, CSS, Javascript and more "
+    />
+    <!-- Open graph meta tags -->
+    <meta property="og:title" content="Programming blog by Ieva Ba" />
+    <meta
+      property="og:description"
+      content="Some interesting insites about Html, CSS, Javascript and more"
+    />
+    <meta
+      property="og:image"
+      content="https://www.necl-it.co.uk/wp-content/uploads/2021/09/microsoft-project-365-necl-blog-320x202.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://ievaba.github.io/BitHTML/Sprint1_MyBlog/"
+    />
+    <meta property="og:type" content="blog" />
+
+    <!-- Twitter mata tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Programming blog by Ieva Ba" />
+    <meta
+      name="twitter:description"
+      content="Some interesting insites about Html, CSS, Javascript and more"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.necl-it.co.uk/wp-content/uploads/2021/09/microsoft-project-365-necl-blog-320x202.jpg"
+    />
+    <meta
+      name="twitter:url"
+      content="https://ievaba.github.io/BitHTML/Sprint1_MyBlog/"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-DCEZQLTW1B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DCEZQLTW1B");
+    </script>
+    <title>Programming blog</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia",
+          serif;
+        font-size: 18px;
+        background: #eaeef0;
+        padding: 2px;
+        border-bottom: 10px solid #969595;
+      }
+      nav {
+        padding-bottom: 5px;
+        border-bottom: 1px solid gray;
+      }
+      main {
+        padding: 10px;
+        padding-bottom: 25px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #646161;
+        margin: 10px;
+      }
+      h2 {
+        text-align: center;
+        letter-spacing: 60px;
+        flex-shrink: 2;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #555151;
+      }
+      h3 {
+        font-size: 20px;
+        margin: 1px;
+      }
+      p {
+        font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia",
+          serif;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      a {
+        color: darkslategray;
+        font-size: 20px;
+        padding-right: 10px;
+      }
+      img {
+        width: 15%;
+        max-width: 120px;
+        height: auto;
+        padding-top: 10px;
+      }
+      footer {
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        position: fixed;
+        background-color: white;
+      }
+      .about {
+        padding-top: 10px;
+      }
+      .conteiner {
+        position: relative;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.8;
+      }
+      @media only screen and (max-width: 800px) {
+        h2,
+        h3,
+        p,
+        a {
+          font-size: 18px;
+        }
+        h1 {
+          font-size: 20px;
+          margin: 5px;
+        }
+        h2 {
+          letter-spacing: 30px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        h2,
+        h3,
+        p,
+        a {
+          font-size: 15px;
+        }
+        h1 {
+          font-size: 18px;
+          margin: 5px;
+        }
+        h2 {
+          letter-spacing: 18px;
+          margin: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my Blog</h1>
+      <h2><code> ieva baltriukaite</code></h2>
+    </header>
+    <main>
+      <nav>
+        <a href="html.html"> <img src="img/html.png" alt="HTML logo" /></a>
+        <a href="css.html"><img src="img/css.png" alt="CSS logo" /></a>
+        <a href="js.html"><img src="img/js.png" alt="JavaScript logo" /></a>
+      </nav>
+      <div class="conteiner">
+        <img
+          src="img/ievaba.jpg"
+          alt="my profile photo"
+          style="
+            width: 45%;
+            max-width: 250px;
+            height: auto;
+            float: right;
+            padding-left: 50px;
+          "
+        />
+        <span class="lines">
+          <h3 class="about">About</h3>
+          <p>
+            Hi, I am Ieva from Lithuania and I am happy to welcome you to my
+            blog. Few facts about me: I am currently studying Full stack at
+            Baltic Institute of Technology. Outside of programming, I do
+            orienteering, kitersurfing, freediving and travelling. Why I choosed
+            to become a programmer? Programming allows more freedom than any
+            other job, it gives an opportunity for a constant growth and allows
+            to improve lifes of others.
+          </p>
+          <p>
+            I created this blog to make you feel more familiar with basics of
+            HTML, CSS and JavaScript. You will find an introduction to each of
+            the topics together with a live examples . Enjoy!
+          </p>
+        </span>
+      </div>
+      <hr />
+
+      <div class="links">
+        <h3>Press below to:</h3>
+        <a href="img/seo.png" target="_blank">Check my SEO and A11Y reports</a>
+        <a
+          href="https://www.opengraph.xyz/url/https%3A%2F%2Fievaba.github.io%2FBitHTML%2FSprint1_MyBlog%2F/"
+          target="_blank"
+          >Preview my Open Graph Meta Tags</a
+        >
+        <a href="https://cards-dev.twitter.com/validator" target="_blank"
+          >Preview my twitter card validation</a
+        >
+        <a href="img/analytics.png" target="_blank"
+          >Have a look at Google Analytics
+        </a>
+        <a href="https://jsonformatter.org/html-validator" target="_blank"
+          >Check HTML validation</a
+        >
+      </div>
+    </main>
+    <footer>&#169; 2022, Ieva Baltriukaite</footer>
+  </body>
+</html>
